@@ -8,16 +8,16 @@ function forLoopExample() {
   console.log("Sum is - " + sum);
 }
 
-function whileLoopExample() {
+function whileLoopExample(start, end, step) {
   let sum = 0;
-  let i = 0;
-  while (i < 10) {
+  let i = start;
+  while (i < end) {
     sum = sum + i;
-    i = i + 1;
+    i = i + step;
   }
 
   console.log("Sum is - " + sum);
 }
 
 forLoopExample();
-whileLoopExample();
+whileLoopExample(0, 10, 1);
