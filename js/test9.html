@@ -1,0 +1,28 @@
+<html>
+  <head></head>
+  <body>
+    <script>
+      var a = 6;
+
+      function orange(a) {
+        alert(test());
+      }
+
+      function test() {
+        var a = 20;
+        a++;
+        function again() {
+          var z = 8;
+          alert(--a);
+          orange(z);
+        }
+
+        again();
+        alert(a);
+      }
+
+      test();
+      alert(a);
+    </script>
+  </body>
+</html>
